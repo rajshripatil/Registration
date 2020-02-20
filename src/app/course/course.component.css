@@ -1,0 +1,10 @@
+/* md-grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+
+  .mat-grid-list
+  {
+      margin-left: 30px;
+  }
