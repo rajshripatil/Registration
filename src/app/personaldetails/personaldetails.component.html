@@ -1,0 +1,33 @@
+<form class="example-form">
+  <div class="col-md-6">
+  <mat-form-field class="example-full-width">
+    <mat-label>First name</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+  <mat-label>Date of Birth</mat-label>
+  <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+  <br/>
+</div>
+<br/>
+       
+        <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>Father's/Guardian's Name:</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+<br/>
+<mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Address 2</mat-label>
+        <textarea matInput></textarea>
+        
+    </mat-form-field>
+</form>

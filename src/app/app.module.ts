@@ -9,6 +9,10 @@ import { AngularMaterialModule } from './material.module';
 import { MasterComponent } from './header/master.component';
 import { CourseComponent } from './course/course.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
+import { myRoute } from './route.config';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { PersonalComponent } from './personaldetails/personaldetails.component';
 
 
 
@@ -17,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     MasterComponent,
     CourseComponent,
-    FooterComponent
+    FooterComponent,
+    WelcomeComponent,
+    PersonalComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     NoopAnimationsModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent],
