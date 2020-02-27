@@ -1,0 +1,178 @@
+<h1>{{title}}</h1>
+
+
+<form class="Academic-form" >
+  <mat-grid-list cols="2" rowHeight="3:1" gutterSize="30px">
+    <mat-grid-tile>
+      <mat-form-field appearance="fill" color="accent">
+        <mat-label >SSC% (10th std)</mat-label>
+        <input matInput placeholder="Your Answer" value="" required>
+        <!-- <mat-error *ngIf="!formGroup.controls['ssc'].valid && formGroup.controls['ssc'].touched">
+           </mat-error> -->
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-form-field appearance="outline" color="warn" >
+        <mat-label>SSC Year of Passing</mat-label>
+        <input matInput placeholder="Your Answer" value="" required>
+            </mat-form-field>     
+    </mat-grid-tile>
+  </mat-grid-list>
+
+      <mat-form-field >
+        <mat-label >Medium of School</mat-label>
+        <mat-select required>
+          <mat-option *ngFor="let medium of school" [value]="medium.value">
+            {{medium.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+  
+    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="30px">
+      <mat-grid-tile>
+    <mat-form-field appearance="fill" color="accent" >
+        <mat-label>HSC % (12th std)</mat-label>
+        <input matInput placeholder="Your Answer" value="" >
+      </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <mat-form-field appearance="outline" color="warn">
+          <mat-label>HSC Year of Passing</mat-label>
+          <input matInput placeholder="Your Answer" value="" >
+        </mat-form-field> 
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="2" rowHeight="3:1" gutterSize="30px">
+      <mat-grid-tile>
+    <mat-form-field  appearance="fill" color="accent">
+        <mat-label>Diploma %</mat-label>
+        <input matInput placeholder="Your Answer" value=""  >
+      </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-form-field appearance="outline" color="warn" >
+        <mat-label>Diploma Year of Passing</mat-label>
+        <input matInput placeholder="Your Answer" value="" >
+      </mat-form-field>
+    </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-form-field >
+      <mat-label>Specialization of Diploma</mat-label>
+      <mat-select required>
+        <mat-option *ngFor="let specialization of special" [value]="specialization.value">
+          {{specialization.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field  color="accent">
+      <mat-label>Diploma College Name</mat-label>
+      <input matInput placeholder="Your Answer" value="" >
+    </mat-form-field>
+
+      <mat-form-field  >
+        <mat-label>Graduation Degree</mat-label>
+        <mat-select required >
+          <mat-option *ngFor="let degree of bachelor" [value]="degree.value" >
+            {{degree.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field >
+      <mat-label>Specialization of Graduation</mat-label>
+      <mat-select required>
+        <mat-option *ngFor="let specialization of special" [value]="specialization.value">
+          {{specialization.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="30px">
+      <mat-grid-tile>
+        <mat-form-field appearance="fill" color="accent" >
+          <mat-label>Graduation Aggreagate %</mat-label>
+          <input matInput placeholder="Your Answer" value="" required>
+        </mat-form-field> 
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <mat-form-field appearance="outline" color="warn" >
+          <mat-label>Graduation Year of Passing</mat-label>
+          <input matInput placeholder="Your Answer" value="" required>
+        </mat-form-field>  
+      </mat-grid-tile>
+      <!-- <mat-grid-tile>
+        <mat-form-field >
+          <mat-label>Graduation Last Year %</mat-label>
+          <input matInput placeholder="Your Answer" value="">
+        </mat-form-field>    
+      </mat-grid-tile>       -->
+    </mat-grid-list>
+     
+      <mat-form-field color="accent" >
+        <mat-label>Graduation College Name</mat-label>
+        <input matInput placeholder="Your Answer" value="" required>
+      </mat-form-field>
+
+      <mat-form-field >
+        <mat-label>Graduation University</mat-label>
+        <mat-select required>
+          <mat-option *ngFor="let university of univer" [value]="university.value">
+            {{university.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field >
+        <mat-label>Post Graduation Degree</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let degree1 of master" [value]="degree1.value">
+            {{degree1.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!-- <mat-form-field >
+        <mat-label>Post Graduation Last Year %</mat-label>
+        <input matInput placeholder="Your Answer" value="">
+      </mat-form-field> -->
+
+      <mat-grid-list cols="2" rowHeight="2:1" gutterSize="30px">
+        <mat-grid-tile>
+          <mat-form-field appearance="fill" color="accent">
+            <mat-label>PG Aggreagate %</mat-label>
+            <input matInput placeholder="Your Answer" value="">
+          </mat-form-field>      
+        </mat-grid-tile>
+
+        <mat-grid-tile>          
+      <mat-form-field appearance="outline" color="warn">
+        <mat-label>PG Year of Passing</mat-label>
+        <input matInput placeholder="Your Answer" value="">
+      </mat-form-field>
+        </mat-grid-tile>        
+      </mat-grid-list>
+
+      <mat-form-field color="accent">
+        <mat-label>Post Graduation College Name </mat-label>
+        <input matInput placeholder="Your Answer" value="">
+      </mat-form-field>
+      
+      <mat-form-field >
+        <mat-label>Post Graduation University</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let university of univer" [value]="university.value">
+            {{university.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary" disableRipple=true >Next</button>     
+  </form>
+
+  

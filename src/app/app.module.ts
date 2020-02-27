@@ -9,6 +9,8 @@ import { AngularMaterialModule } from './material.module';
 import { MasterComponent } from './header/master.component';
 import { CourseComponent } from './course/course.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReferenceComponent } from './references/reference.component';
+import { AcademicComponent } from './academic/academic.component';
 
 
 
@@ -17,7 +19,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     MasterComponent,
     CourseComponent,
-    FooterComponent
+    FooterComponent,
+    AcademicComponent,
+    ReferenceComponent
   ],
   imports: [
     BrowserModule,
