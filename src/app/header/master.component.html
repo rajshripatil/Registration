@@ -1,22 +1,19 @@
- <!-- <mat-toolbar  class="navbar"> 
-    <div style="color:white">AssmilmateTechnology</div>
-    <div>
-        <span style="color:white">Registration</span>
-       
-        
-    
-    </div>
-</mat-toolbar>   -->
+
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Custom Toolbar</span>
+    <span>Registration Form</span>
   </mat-toolbar-row>
 
   <mat-toolbar-row>
-     <button> <a routerLink="./course">Step1</a></button>
-     <button> <a routerLink="./course">Step1</a></button>
-     <button> <a routerLink="./course">Step1</a></button>
+  <button>  <a routerLink="/">About Us</a></button>
+<button><a routerLink="/course">Course</a></button>
+<button><a routerLink="/personal">Personal Details</a></button>
+
+     <!-- <button> <a routerLink="./course">Step1</a></button>
+     <button> <a routerLink="./course">Step2</a></button>
+     <button> <a routerLink="./course">Step3</a></button> -->
   </mat-toolbar-row>
 
 </mat-toolbar>
-
+<router-outlet></router-outlet>
+<footer-comp></footer-comp>
