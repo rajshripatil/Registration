@@ -2,7 +2,7 @@
 
 
 <form class="Academic-form" >
-  <mat-grid-list cols="2" rowHeight="3:1" gutterSize="30px">
+  <mat-grid-list cols="2" rowHeight="2:1" gutterSize="30px">
     <mat-grid-tile>
       <mat-form-field appearance="fill" color="accent">
         <mat-label >SSC% (10th std)</mat-label>
@@ -45,7 +45,7 @@
       </mat-grid-tile>
     </mat-grid-list>
 
-    <mat-grid-list cols="2" rowHeight="3:1" gutterSize="30px">
+    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="30px">
       <mat-grid-tile>
     <mat-form-field  appearance="fill" color="accent">
         <mat-label>Diploma %</mat-label>
@@ -63,7 +63,7 @@
 
     <mat-form-field >
       <mat-label>Specialization of Diploma</mat-label>
-      <mat-select required>
+      <mat-select >
         <mat-option *ngFor="let specialization of special" [value]="specialization.value">
           {{specialization.viewValue}}
         </mat-option>
@@ -137,11 +137,6 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-
-      <!-- <mat-form-field >
-        <mat-label>Post Graduation Last Year %</mat-label>
-        <input matInput placeholder="Your Answer" value="">
-      </mat-form-field> -->
 
       <mat-grid-list cols="2" rowHeight="2:1" gutterSize="30px">
         <mat-grid-tile>
